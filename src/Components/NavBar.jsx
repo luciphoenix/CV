@@ -1,3 +1,13 @@
+import Links from './Links'
+import './Styles/NavBar.css'
+
+
 export default function NavBar() {
-    return
+    return (
+        <>
+            <ul>
+                <Links />
+            </ul>
+        </>
+    )
 }

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: imprecise;
+    src: url('../../assets/i-imprecise-font/Imprecise-8MGaD.otf');
+}
+
+li{
+    padding-top: 4px;
+}
+
+a{
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: imprecise;
+    letter-spacing: 1px;
+}
