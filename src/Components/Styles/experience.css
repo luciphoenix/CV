@@ -1,0 +1,8 @@
+.description{
+    height: 76px;
+}
+
+.company{
+    display: flex;
+    justify-content: space-between;
+}

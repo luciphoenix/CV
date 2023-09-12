@@ -1,0 +1,9 @@
+img{
+    display: block;
+    margin: 40px auto;
+    width: 1.5in;
+    height: 1.5in;
+    /* scale: 4; */
+    border: 2px solid white;
+    border-radius: 50%;
+}

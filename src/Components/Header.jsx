@@ -4,10 +4,10 @@ import NavBar from './NavBar'
 function Header() {
     return (
         <>
-            <div className='headerBody'>
+            <header className='headerBody'>
                 <h1>Curriculum vitae</h1>
                 <NavBar/>
-            </div>
+            </header>
         </>
     )
 }

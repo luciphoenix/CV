@@ -4,10 +4,10 @@ import './Styles/NavBar.css'
 
 export default function NavBar() {
     return (
-        <>
-            <ul>
+        <nav>
+            <ul className='nav-ul'>
                 <Links />
             </ul>
-        </>
+        </nav>
     )
 }

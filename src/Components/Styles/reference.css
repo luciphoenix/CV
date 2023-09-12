@@ -1,0 +1,13 @@
+.reference{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
+.email{
+    text-decoration: none;
+    color: rgb(70, 85, 170);
+    font-size: 1.2rem;
+}
