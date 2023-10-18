@@ -1,22 +1,21 @@
 @font-face {
-    font-family: Nyt;
-    src: url('../../assets/chomsky-font/Chomsky-8MOa2.otf');
+  font-family: Nyt;
+  src: url("../../assets/chomsky-font/Chomsky-8MOa2.otf");
 }
 
-
-.headerBody{
-    background-color: #272729f1;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    position: fixed;
-    width: inherit;
-    /* z-index: 1; */
+.headerBody {
+  background-color: #272729f1;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  position: fixed;
+  width: inherit;
+  /* z-index: 1; */
 }
-h1{
-    color: rgb(190, 221, 241);
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: Nyt;
-    letter-spacing: 2px;
-    padding: 4px 0;
+h1 {
+  color: rgb(190, 221, 241);
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Nyt;
+  letter-spacing: 2px;
+  padding: 4px 0;
 }

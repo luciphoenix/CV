@@ -1,6 +1,6 @@
 .createBody {
-    background-color: #eee7e7;
-    grid-row: 2/-2;
-    grid-column: 1/2;
-    padding-top: 10px;
+  background-color: #eee7e7;
+  grid-row: 2/-2;
+  grid-column: 1/2;
+  padding-top: 10px;
 }

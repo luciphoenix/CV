@@ -1,19 +1,18 @@
-.cv-display{
-    background-color: #fff;
-    grid-row: 2/-2;
-    grid-column: 2/-1;
-    display: flex;
+.cv-display {
+  background-color: #fff;
+  grid-row: 2/-2;
+  grid-column: 2/-1;
+  display: flex;
 }
-.first-div{
-    background-color: rgb(40, 54, 66);
-    width: 50rem;
+.first-div {
+  background-color: rgb(40, 54, 66);
+  width: 50rem;
 }
 .second-div {
-    padding: 25px;
-    background-color: rgb(255, 255, 255);
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
 }
-.first-div >:first-child ~ *{
-    margin-left: 90px;
-    color: #fff;
+.first-div > :first-child ~ * {
+  margin-left: 90px;
+  color: #fff;
 }
-

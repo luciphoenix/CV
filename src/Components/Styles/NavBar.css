@@ -1,9 +1,9 @@
-.nav-ul{
-    display: flex;
-    justify-content: space-around;
-    border-top: 2px double rgba(172, 248, 242, 0.856);
-    border-radius: 5px;
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px double rgba(172, 248, 242, 0.856);
+  border-radius: 5px;
 }
-.nav-ul > *{
-    list-style: none;
+.nav-ul > * {
+  list-style: none;
 }

@@ -1,6 +1,6 @@
 @font-face {
   font-family: Quileute;
-  src: url('/src/assets/quileute-font/Quileute-DO5yE.otf');
+  src: url("/src/assets/quileute-font/Quileute-DO5yE.otf");
 }
 
 :root {
@@ -9,10 +9,11 @@
   box-sizing: border-box;
   list-style: none;
 }
-legend,h3{
+legend,
+h3 {
   font-family: Quileute;
 }
-h3{
+h3 {
   margin-top: 1.5rem;
   letter-spacing: 2px;
 }

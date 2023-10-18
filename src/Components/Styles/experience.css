@@ -1,8 +1,11 @@
-.description{
-    height: 76px;
+.description {
+  height: 76px;
+  max-width: 100%;
+  /* background-color: green; */
+  /* word-wrap: break-word; */
 }
 
-.company{
-    display: flex;
-    justify-content: space-between;
+.company {
+  display: flex;
+  justify-content: space-between;
 }

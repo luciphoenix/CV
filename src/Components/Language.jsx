@@ -1,16 +1,10 @@
-import './Styles/contact.css'
+import "./Styles/contact.css";
 
-export default function Language() {
-    let languages = ['English', 'Ghanaian Twi', 'Spanish'].map(
-        lang => <li key={lang}>{lang}</li>
-    )
-    return (
-        <>
-            <h3>Languages</h3>
-            <hr />
-            <ul>
-                {languages}
-            </ul>
-        </>
-    )
+function Language({ lang, id, level }) {
+  return (
+    <>
+      <li key={id}>{lang} ({ level})</li>
+    </>
+  );
 }
+export default Language
