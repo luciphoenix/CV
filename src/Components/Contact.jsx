@@ -11,6 +11,8 @@ export default function Contact({ email , person}) {
       <p>{email}</p>
       <h4>Address</h4>
       <p>{person.address}</p>
+      <h4>Linkdin</h4>
+      <p>{ person.linkdin}</p>
     </>
   );
 }

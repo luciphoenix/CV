@@ -15,7 +15,7 @@ function CVDisplay({ person, edu, skillData , experiences, references, spoken,})
         <div className="first-div">
           <Profile person />
           <Contact email={person.email} person={person} />
-          <div className="school">
+          <div className="schoolD">
             <h3>Education</h3>
             <hr />
             {edu.school.map(sch => <Education name={sch.school} deg={sch.degree} program={sch.program}  /> )}

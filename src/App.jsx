@@ -12,6 +12,7 @@ function App() {
   const [email, setEmail] = useState("alvesbirifa@gmail.com");
   const [phone, setPhone] = useState('0549989323')
   const [role, setRole] = useState('Software Engineer')
+  const [linkdin,setLinkdin] = useState('link/elvis/998.html')
   const [address, setAddress] = useState('Ak-252-1968');
   const [language,setLanguage] = useState([{id:0, lang:'Spanish', 'level0':'native'},{id:1, lang:'English', 'level1':'intermediate'}])
   const [description,setDescription] = useState('')
@@ -19,7 +20,7 @@ function App() {
         {id:1, referer:'Enerst Badu', position:'senior Lecturer', contact:'0544531557', email:'ebadu@gmail.com'}])
   const [skills, setSkills] = useState([{ id: 0, skill: "Javascript" }, { id: 1, skill: "Ruby" }, { id: 2, skill: "React" }, { id: 3, skill: "Ethical Hacking" },])
   const [experience, setExperience] = useState([{ id: 0, title: 'title', date: new Date().getFullYear().toString(), company: 'company', description: 'hsdvchwcwkedbjwedjbbsabkbdsakjsjbskjbkjdbskbdbbsabsajbbaskjbkjbajb' },
-        { id: 1, title: 'title', date:new Date().getFullYear().toString(), company:'companies', description:'ydeuiwiqwioqwdwoqwskqwsknklxnlkxnalsknjwedjbbsabkbdsakjsjbskjbkjdbskbdbbsabsajbbaskjbkjbajb'}])
+        { id: 1, title: 'title', date:new Date().getFullYear().toString(), company:'companies', description:'        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ducimus vitae, odio sequi officia officiis minus sapiente quis, eius praesentium unde? Quibusdam optio maxime impedit provident, enim nulla quae numquam.'}])
   const [nextschoolId, setNextSchoolId] = useState(2)
   const [nextExperienceId, setNextExperienceId] = useState(2)
   const [nextSkillId, setNextskillId] = useState(4)
@@ -29,6 +30,9 @@ function App() {
  
   const cFname = (e) => {
     setFname(e.target.value);
+  };
+  const clinkdin = (e) => {
+    setLinkdin(e.target.value);
   };
   const cAddress = (e) => {
     setAddress(e.target.value);
@@ -122,6 +126,8 @@ function App() {
     cRole,
     description,
     cDescription,
+    linkdin,
+    clinkdin,
   };
   
   const handleReference = (e,id) => {

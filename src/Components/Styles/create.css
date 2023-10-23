@@ -2,5 +2,88 @@
   background-color: #eee7e7;
   grid-row: 2/-2;
   grid-column: 1/2;
-  padding-top: 10px;
+  padding-top: 0.8rem;
+  overflow-y: scroll;
+  padding: 1rem 1rem 2rem 1rem;
+}
+h2{
+  margin-bottom: 1rem;
+}
+
+ input{
+  appearance: none;
+  border-radius: 0.25rem;
+  height: 2rem;
+  margin-left: 0.1rem;
+  padding-left: 0.25rem;
+  font-size: 1rem;
+}
+
+label{
+  display: block;
+  font-size: 1.2rem;
+  color: #050505b0;
+}
+.name,.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact label{
+  width: 4rem;
+}
+.role{
+  display: flex;
+  border-radius: 10px;
+  /* flex-direction: column; */
+  background-color: #ffffff;
+  padding: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.education, .experiencec, .personal, .references, .skillc, .languagec{
+    border-radius: 10px;
+      /* flex-direction: column; */
+      background-color: #ffffff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+}
+.school, .experiencef, .background, .referencef, .skillf, .languagef{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+select{
+  width: 28rem;
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #fff;
+}
+.school > :last-child,.experiencef > :last-child {
+  align-self: center;
+}
+.add,.submit{
+  display: block;
+  margin: 1.2rem auto;
+  width: 8rem;
+  height: 2rem;
+}
+.divider{
+  margin: 2rem 0;
+}
+textarea{
+  width: 85%;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.radio-input{
+  border: 1px solid black;
+  width: 1rem;
+  height: 1rem;
 }

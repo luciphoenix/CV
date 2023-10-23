@@ -3,16 +3,24 @@
   grid-row: 2/-2;
   grid-column: 2/-1;
   display: flex;
+  overflow-y: scroll;
+  
 }
 .first-div {
   background-color: rgb(40, 54, 66);
-  width: 50rem;
+  width: 16rem;
+  height: max-content;
+  padding-bottom: 2rem;  
 }
 .second-div {
-  padding: 25px;
+  width: calc(100% - 16rem);
+  padding: 1.5rem;
   background-color: rgb(255, 255, 255);
+  padding-bottom: 2rem;
 }
 .first-div > :first-child ~ * {
-  margin-left: 90px;
+  margin-left: 2rem;
   color: #fff;
+  margin-right: 0.25rem;
 }
+
