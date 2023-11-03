@@ -18,7 +18,7 @@ function CVDisplay({
 }) {
   return (
     <>
-      <div className="cv-display">
+      <div className="cv-display hide-cv">
         <div className="first-div">
           <Profile person />
           <Contact email={person.email} person={person} />
@@ -63,7 +63,8 @@ function CVDisplay({
                 <Experience
                   title={exp.title}
                   company={exp.company}
-                  date={exp.date}
+                  start={exp.start}
+                  end={exp.end}
                   description={exp.description}
                   key={exp.id}
                 />

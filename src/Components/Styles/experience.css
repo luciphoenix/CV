@@ -1,12 +1,11 @@
-.description {
-  height: 4.75rem;
+.description-list {
+  min-height: 4.75rem;
   max-width: 100%;
+  padding-left: revert;
   /* background-color: green; */
   /* word-wrap: break-word; */
 }
-ul {
-  padding-left: 0;
-}
+
 .company {
   display: flex;
   justify-content: space-between;

@@ -3,10 +3,8 @@ import Personal from "./Personal";
 import CreateEdu from "./CreateEdu";
 import CreateSkill from "./CreateSkill";
 import CreateReference from "./CreateReference";
-import { useState, useEffect } from "react";
 import CreateExperience from "./CreateExperience";
 import CreateLanguage from "./CreateLanguage";
-import Language from "./Language";
 
 function Create({
   person,
@@ -17,17 +15,8 @@ function Create({
   skillData,
   references,
   spoken,
+  toggle,
 }) {
-  // const [eduList, setEduList] = useState([]);
-  // const handleAddSchool = () => {
-  //   edu.handleNewSchool()
-  // };
-  // useEffect(
-  //     () => ({
-  //         useEduList(eduList.concat(<CreateEdu edu={edu} />))
-  //     })
-  // )
-
   return (
     <>
       <div className="createBody">
@@ -56,7 +45,8 @@ function Create({
               <CreateExperience
                 title={exp.title}
                 onChange={experiences.handleExperience}
-                date={exp.date}
+                start={exp.start}
+                end={exp.end}
                 onClick={experiences.handleExperienceDelete}
                 company={exp.company}
                 description={exp.description}
@@ -132,7 +122,6 @@ function Create({
               ADD
             </button>
           </div>
-          <button className="submit">submit</button>
         </form>
       </div>
     </>

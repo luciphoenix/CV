@@ -1,7 +1,8 @@
 
 function CreateExperience({
   title,
-  date,
+  start,
+  end,
   description,
   company,
   id,
@@ -49,10 +50,20 @@ function CreateExperience({
           <label htmlFor="date">Awarded Date</label>
           <input
             type="date"
-            name="date"
+            name="start"
             id="date"
             onChange={(e) => onChange(e, id)}
-            value={date}
+            value={start}
+          />
+        </div>
+        <div>
+          <label htmlFor="date">Awarded Date</label>
+          <input
+            type="date"
+            name="end"
+            id="date"
+            onChange={(e) => onChange(e, id)}
+            value={end}
           />
         </div>
 

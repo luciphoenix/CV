@@ -44,19 +44,21 @@ function App() {
   const [experience, setExperience] = useState([
     {
       id: 0,
-      title: "title",
-      date: new Date().getFullYear().toString(),
-      company: "company",
+      title: "Project manager",
+      start: new Date().getFullYear().toString(),
+      end: new Date().getFullYear().toString(),
+      company: "Donyma steel complex",
       description:
         `loknonodennawieninrwien
-        rnoiwerinonrosonirneiongrennan
-        dninvgninpgnpregnrpntginnvnnwrinirning`
+oiwerinonrosonirneiongrennan
+dninvgninpgnpregnrpntginnvnnwrinirning`
     },
     {
       id: 1,
-      title: "title",
-      date: new Date().getFullYear().toString(),
-      company: "companies",
+      title: "Contract Administrator",
+      start: new Date().getFullYear().toString(),
+      end: new Date().getFullYear().toString(),
+      company: "Consar construction limited",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.Natus ducimus vitae, odio sequi officia officiis minus sapiente quis, eius praesentium unde? Quibusdam optio maxime impedit provident, enim nulla quae numquam.",
     },
@@ -161,6 +163,8 @@ function App() {
     });
     setSkills(newSkills);
   };
+
+ 
 
   function cSchool(e, id) {
     // make the target equal id equal to its current index incase of delete

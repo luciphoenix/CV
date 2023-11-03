@@ -17,31 +17,49 @@ h3 {
   margin-top: 1.5rem;
   letter-spacing: 2px;
 }
+ul{
+  padding-left: 0;
+}
+
 
 
 @media (max-width: 650px) {
   .body {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
-  .headerBody{
+  .hide-cv {
+      display: none;
+    }
+   .headerBody{
     position: static;
   }
-  .cv-Display{
+  /* .cv-Display{
     position: static;
     overflow-y: auto;
+  }  */
+  img{
+    transform: scale(0.8);
   }
-  .createBody{
+  /* .createBody{
     position: static;
     overflow: visible;
+  } */
+  .second-div{
+    padding-left: 1rem;
+  }
+  .description-list{
+    padding-left: 2rem;
   }
 
-  :root {
+  /* :root {
     font-size: 16px;
-  }
+  } */
 }
 @media (max-width:520px){
   :root{
     font-size: 12px;
   }
+    .body {
+      display: block;
+    }
 }
