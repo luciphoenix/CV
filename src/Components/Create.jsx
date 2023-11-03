@@ -57,7 +57,6 @@ function Create({
                 title={exp.title}
                 onChange={experiences.handleExperience}
                 date={exp.date}
-                onFocus={experiences.handleExDescription}
                 onClick={experiences.handleExperienceDelete}
                 company={exp.company}
                 description={exp.description}

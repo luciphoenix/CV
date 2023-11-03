@@ -1,4 +1,3 @@
-import React from "react";
 
 function CreateExperience({
   title,
@@ -8,7 +7,6 @@ function CreateExperience({
   id,
   onChange,
   onClick,
-  onFocus,
 }) {
   return (
     <>
@@ -45,7 +43,6 @@ function CreateExperience({
           placeholder="write a little about the honour..."
           value={description}
           onChange={(e) => onChange(e, id)}
-          onFocus={onFocus}
         ></textarea>
 
         <div>

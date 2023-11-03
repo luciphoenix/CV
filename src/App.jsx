@@ -48,7 +48,9 @@ function App() {
       date: new Date().getFullYear().toString(),
       company: "company",
       description:
-        "hsdvchwcwkedbjwedjbbsabkbdsakjsjbskjbkjdbskbdbbsabsajbbaskjbkjbajb",
+        `loknonodennawieninrwien
+        rnoiwerinonrosonirneiongrennan
+        dninvgninpgnpregnrpntginnvnnwrinirning`
     },
     {
       id: 1,
@@ -250,9 +252,6 @@ function App() {
     });
     setExperience(newExperience);
   };
-  const handleExDescription = (e) => {
-    console.log(e.target.onfocus);
-  };
 
   const skillData = {
     skills,
@@ -271,7 +270,6 @@ function App() {
     handleExperience,
     handleNewExperience,
     handleExperienceDelete,
-    handleExDescription,
   };
   const references = {
     reference,
