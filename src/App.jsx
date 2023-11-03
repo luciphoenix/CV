@@ -29,7 +29,7 @@ function App() {
     },
     {
       id: 1,
-      referer: "Enerst Badu",
+      referer: "Edward Badu",
       position: "senior Lecturer",
       contact: "0544531557",
       email: "ebadu@gmail.com",
