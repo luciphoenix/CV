@@ -17,3 +17,31 @@ h3 {
   margin-top: 1.5rem;
   letter-spacing: 2px;
 }
+
+
+@media (max-width: 650px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerBody{
+    position: static;
+  }
+  .cv-Display{
+    position: static;
+    overflow-y: auto;
+  }
+  .createBody{
+    position: static;
+    overflow: visible;
+  }
+
+  :root {
+    font-size: 16px;
+  }
+}
+@media (max-width:520px){
+  :root{
+    font-size: 12px;
+  }
+}

@@ -1,12 +1,17 @@
 import React from "react";
 
-function CreateLanguage({ lang, id, onChange, onClick,level }) {
+function CreateLanguage({ lang, id, onChange, onClick, level }) {
   return (
     <>
-      {id > 0 && <hr className="divider"/>}
+      {id > 0 && <hr className="divider" />}
       <div className="languagef">
-        <select name="lang" value={lang} id="language" onChange={(e)=>onChange(e,id)}>
-          <option value="#"  disabled>
+        <select
+          name="lang"
+          value={lang}
+          id="language"
+          onChange={(e) => onChange(e, id)}
+        >
+          <option value="#" disabled>
             ---- select language ---
           </option>
           <option value="English">English</option>
@@ -17,9 +22,16 @@ function CreateLanguage({ lang, id, onChange, onClick,level }) {
           <option value="Chiness">Chiness</option>
           <option value="Hebrew">Hebrew</option>
         </select>
-        
+
         <label htmlFor={`level${id}n`}>
-          <input type="radio" className="radio-input" name={`level${id}`} id={`level${id}n`} value="native" onChange={(e)=>onChange(e,id)}/>
+          <input
+            type="radio"
+            className="radio-input"
+            name={`level${id}`}
+            id={`level${id}n`}
+            value="native"
+            onChange={(e) => onChange(e, id)}
+          />
           Native
         </label>
         <label htmlFor={`level${id}i`}>
@@ -29,12 +41,14 @@ function CreateLanguage({ lang, id, onChange, onClick,level }) {
             name={`level${id}`}
             id={`level${id}i`}
             value="intermediate"
-            onChange={(e) => onChange(e,id)}
+            onChange={(e) => onChange(e, id)}
           />
           Intermediate
         </label>
-        
-        <button type='button' onClick = {() => onClick(id)}>Delete</button>
+
+        <button type="button" onClick={() => onClick(id)}>
+          Delete
+        </button>
       </div>
     </>
   );

@@ -6,11 +6,11 @@
   overflow-y: scroll;
   padding: 1rem 1rem 2rem 1rem;
 }
-h2{
+h2 {
   margin-bottom: 1rem;
 }
 
- input{
+input {
   appearance: none;
   border-radius: 0.25rem;
   height: 2rem;
@@ -19,21 +19,22 @@ h2{
   font-size: 1rem;
 }
 
-label{
+label {
   display: block;
   font-size: 1.2rem;
   color: #050505b0;
 }
-.name,.contact{
+.name,
+.contact {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.contact label{
+.contact label {
   width: 4rem;
 }
-.role{
+.role {
   display: flex;
   border-radius: 10px;
   /* flex-direction: column; */
@@ -44,45 +45,65 @@ label{
   align-items: center;
 }
 
-.education, .experiencec, .personal, .references, .skillc, .languagec{
-    border-radius: 10px;
-      /* flex-direction: column; */
-      background-color: #ffffff;
-      padding: 1rem;
-      margin-bottom: 1rem;
+.education,
+.experiencec,
+.personal,
+.references,
+.skillc,
+.languagec {
+  border-radius: 10px;
+  /* flex-direction: column; */
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
-.school, .experiencef, .background, .referencef, .skillf, .languagef{
+.school,
+.experiencef,
+.background,
+.referencef,
+.skillf,
+.languagef {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 }
+/* .school > *,
+.experiencef >*,
+.background >*,
+.referencef>*,
+.skillf >*,
+.languagef>*{
+  flex: 1;
+} */
 
-select{
+select {
   width: 28rem;
   height: 2rem;
   border-radius: 5px;
   font-size: 1.2rem;
   background-color: #fff;
 }
-.school > :last-child,.experiencef > :last-child {
+.school > :last-child,
+.experiencef > :last-child {
   align-self: center;
 }
-.add,.submit{
+.add,
+.submit {
   display: block;
   margin: 1.2rem auto;
   width: 8rem;
   height: 2rem;
 }
-.divider{
+.divider {
   margin: 2rem 0;
 }
-textarea{
+.textarea, textarea {
   width: 85%;
   border-radius: 5px;
   padding: 0.5rem;
 }
-.radio-input{
+.radio-input {
   border: 1px solid black;
   width: 1rem;
   height: 1rem;

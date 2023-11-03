@@ -14,7 +14,7 @@ function Personal({ person }) {
                 onChange={person.cFname}
               />
             </div>
-        
+
             <div>
               <label htmlFor="lname">Last name</label>
               <input
@@ -24,7 +24,7 @@ function Personal({ person }) {
                 onChange={person.cLname}
               />
             </div>
-        
+
             <div>
               <label htmlFor="otherName">Other names</label>
               <input
@@ -39,9 +39,15 @@ function Personal({ person }) {
           <div className="contact">
             <div>
               <label htmlFor="phone"> Phone</label>
-              <input type="tel" name="number" id="number" value={person.phone} onChange={person.handlePhone}/>
+              <input
+                type="tel"
+                name="number"
+                id="number"
+                value={person.phone}
+                onChange={person.handlePhone}
+              />
             </div>
-        
+
             <div>
               <label htmlFor="email">E-mail </label>
               <input
@@ -52,21 +58,49 @@ function Personal({ person }) {
                 onChange={person.cEmail}
               />
             </div>
-        
+
             <div>
               <label htmlFor="address"> Address</label>
-              <input type="text" name="address" id="address" value={person.address} onChange={person.cAddress}/>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                value={person.address}
+                onChange={person.cAddress}
+              />
             </div>
-          </div>        
+          </div>
           <div>
             <label htmlFor="role">Position</label>
-            <input type="text" name="role" id="role" value={person.role} onChange={person.cRole} />
+            <input
+              type="text"
+              name="role"
+              id="role"
+              value={person.role}
+              onChange={person.cRole}
+            />
           </div>
           <div>
             <label htmlFor="linkdin">Linkdin</label>
-            <input type="text" name="linkdin" id="linkdin" value={person.linkdin} onChange={person.clinkdin} />
+            <input
+              type="text"
+              name="linkdin"
+              id="linkdin"
+              value={person.linkdin}
+              onChange={person.clinkdin}
+            />
           </div>
-          <textarea name="role" id="role" cols="30" rows="10" placeholder="Provide decription of your role" value={person.description} onChange={person.cDescription}></textarea>
+          <div className="textarea">
+            <textarea
+              name="role"
+              id="role"
+              cols="30"
+              rows="10"
+              placeholder="Provide decription of your role"
+              value={person.description}
+              onChange={person.cDescription}
+            ></textarea>
+          </div>
         </div>
       </div>
     </>
