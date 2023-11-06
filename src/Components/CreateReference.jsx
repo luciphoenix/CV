@@ -54,7 +54,6 @@ function CreateReference({
             id="email"
             value={email}
             onChange={(e) => onChange(e, id)}
-            autoFocus='true'
           />
         </div>
 

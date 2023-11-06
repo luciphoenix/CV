@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Styles/footer.css";
 
 
@@ -11,13 +11,15 @@ function Footer() {
      e.target.parentElement.parentElement.children[2].classList.toggle('hide-cv')
      setHidden(!hidden)
    }
-  
-  let disable = screen < 650 
+   console.log(screen);
+  let disable = screen > 650 
   console.log(disable);
+  useEffect(()=> window.addEventListener('screen', () => setScreen(window.screen.availWidth)))
+  console.log(screen)
   return (
     <>
       <div className="footer">
-        <button type="button" disabled={disable} onClick={toggle}>{hidden ? 'Edit' : 'Create'}</button>
+        {disable ? <div>Luciphoenix&copy;<span>&#50;&#48;&#50;&#51;</span></div> : <button type="button"  onClick={toggle}>{hidden ? 'Edit' : 'Create'}</button>}
       </div>
     </>
   );
