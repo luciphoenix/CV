@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Personal({ person }) {
   return (
     <>
@@ -107,4 +109,7 @@ function Personal({ person }) {
   );
 }
 
+Personal.propTypes = {
+  person: PropTypes.object,
+}
 export default Personal;

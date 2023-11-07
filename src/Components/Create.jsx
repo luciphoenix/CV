@@ -5,18 +5,19 @@ import CreateSkill from "./CreateSkill";
 import CreateReference from "./CreateReference";
 import CreateExperience from "./CreateExperience";
 import CreateLanguage from "./CreateLanguage";
+import PropTypes from 'prop-types'
 
 function Create({
   person,
   edu,
-  email,
-  cEmail,
   experiences,
   skillData,
   references,
   spoken,
-  toggle,
-}) {
+})
+
+
+{
   return (
     <>
       <div className="createBody">
@@ -87,7 +88,6 @@ function Create({
               <CreateLanguage
                 lang={lang.lang}
                 key={lang.id}
-                level={lang[`level${lang.id}`]}
                 id={lang.id}
                 onChange={spoken.handleLanguage}
                 onClick={spoken.handleLanguageDelete}
@@ -110,6 +110,7 @@ function Create({
                 onClick={references.handleReferenceDelete}
                 position={ref.position}
                 id={ref.id}
+                key={ref.id}
                 email={ref.email}
                 phone={ref.contact}
               />
@@ -129,6 +130,12 @@ function Create({
 }
 export default Create;
 
-// Create.propTypes = {
-//   person: propTypes.object
-// }
+Create.propTypes = {
+  person: PropTypes.object,
+  edu: PropTypes.object,
+  experiences: PropTypes.object,
+  references: PropTypes.object,
+  skillData: PropTypes.object,
+  spoken: PropTypes.object,
+}
+

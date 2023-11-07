@@ -7,6 +7,7 @@ import Background from "./Background";
 import Experience from "./Experience";
 import Reference from "./Reference";
 import "./Styles/cvdisplay.css";
+import PropTypes from "prop-types";
 
 function CVDisplay({
   person,
@@ -30,6 +31,8 @@ function CVDisplay({
                 name={sch.school}
                 deg={sch.degree}
                 program={sch.program}
+                id={sch.id}
+                key={sch.id}
               />
             ))}
           </div>
@@ -90,5 +93,14 @@ function CVDisplay({
       </div>
     </>
   );
+}
+
+CVDisplay.propTypes = {
+  person: PropTypes.object,
+  edu: PropTypes.object,
+  experiences: PropTypes.object,
+  references: PropTypes.object,
+  skillData: PropTypes.object,
+  spoken: PropTypes.object,
 }
 export default CVDisplay;

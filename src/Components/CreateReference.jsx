@@ -1,4 +1,5 @@
-import React from "react";
+import PropTypes from "prop-types";
+
 
 function CreateReference({
   referer,
@@ -63,6 +64,16 @@ function CreateReference({
       </div>
     </>
   );
+}
+
+CreateReference.propTypes = {
+  referer: PropTypes.string,
+  position: PropTypes.string,
+  phone: PropTypes.string,
+  onClick: PropTypes.func,
+  onChange: PropTypes.func,
+  email: PropTypes.string,
+  id: PropTypes.number,
 }
 
 export default CreateReference;

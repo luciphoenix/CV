@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 
 function CreateExperience({
   title,
@@ -75,6 +77,17 @@ function CreateExperience({
       </div>
     </>
   );
+}
+
+CreateExperience.propTypes = {
+  title: PropTypes.string,
+  start: PropTypes.string,
+  end: PropTypes.string,
+  description: PropTypes.string,
+  company: PropTypes.string,
+  id: PropTypes.number,
+  onChange: PropTypes.func,
+  onClick: PropTypes.func,
 }
 
 export default CreateExperience;

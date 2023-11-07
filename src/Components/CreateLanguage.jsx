@@ -1,6 +1,6 @@
-import React from "react";
+import PropTypes from "prop-types";
 
-function CreateLanguage({ lang, id, onChange, onClick, level }) {
+function CreateLanguage({ lang, id, onChange, onClick, }) {
   return (
     <>
       {id > 0 && <hr className="divider" />}
@@ -53,5 +53,13 @@ function CreateLanguage({ lang, id, onChange, onClick, level }) {
     </>
   );
 }
+
+CreateLanguage.propTypes = {
+  lang: PropTypes.string,
+  id: PropTypes.number,
+  onChange: PropTypes.func,
+  onClick: PropTypes.func,
+}
+
 
 export default CreateLanguage;

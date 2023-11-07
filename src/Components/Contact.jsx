@@ -1,6 +1,6 @@
+import PropTypes from "prop-types";
 import "./Styles/contact.css";
-
-export default function Contact({ email, person }) {
+ function Contact({ email, person }) {
   return (
     <>
       <h3> Contact</h3>
@@ -16,3 +16,11 @@ export default function Contact({ email, person }) {
     </>
   );
 }
+
+Contact.propTypes = {
+  email: PropTypes.string,
+  person: PropTypes.object,
+}
+
+
+export default Contact

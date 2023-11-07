@@ -1,3 +1,6 @@
+import PropTypes from "prop-types";
+
+
 function CreateEdu({ name, onChange, deg, id, program, onClick }) {
   return (
     <>
@@ -56,5 +59,12 @@ function CreateEdu({ name, onChange, deg, id, program, onClick }) {
     </>
   );
 }
-
+CreateEdu.propTypes = {
+  name: PropTypes.string,
+  onChange: PropTypes.func,
+  deg: PropTypes.string,
+  id: PropTypes.number,
+  program: PropTypes.string,
+  onClick: PropTypes.func,
+}
 export default CreateEdu;

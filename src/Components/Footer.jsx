@@ -11,11 +11,9 @@ function Footer() {
      e.target.parentElement.parentElement.children[2].classList.toggle('hide-cv')
      setHidden(!hidden)
    }
-   console.log(screen);
   let disable = screen > 650 
-  console.log(disable);
   useEffect(()=> window.addEventListener('screen', () => setScreen(window.screen.availWidth)))
-  console.log(screen)
+  
   return (
     <>
       <div className="footer">

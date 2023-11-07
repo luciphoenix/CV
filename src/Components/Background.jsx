@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./Styles/background.css";
 
 function Background({ person }) {
@@ -11,5 +12,11 @@ function Background({ person }) {
     </>
   );
 }
+
+Background.propTypes = {
+  person: PropTypes.object,
+}
+
+
 
 export default Background;
