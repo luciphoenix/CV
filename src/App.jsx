@@ -6,33 +6,35 @@ import Footer from "./Components/Footer";
 import "./App.css";
 
 function App() {
-  const [fname, setFname] = useState("Elvis");
-  const [lname, setLname] = useState("Birifa");
-  const [oname, setOname] = useState("karikari");
-  const [email, setEmail] = useState("alvesbirifa@gmail.com");
-  const [phone, setPhone] = useState("0549989323");
+  const [fname, setFname] = useState("John");
+  const [lname, setLname] = useState("Nave");
+  const [oname, setOname] = useState("Doe");
+  const [email, setEmail] = useState("JohnDoe@gmail.com");
+  const [phone, setPhone] = useState("023456789");
   const [role, setRole] = useState("Software Engineer");
-  const [linkdin, setLinkdin] = useState("linkedin.com/in/elvis-birifa");
-  const [address, setAddress] = useState("Ak-252-1968");
+  const [linkdin, setLinkdin] = useState("linkedin.com/in/john-doe");
+  const [address, setAddress] = useState("356-645-1964");
   const [language, setLanguage] = useState([
     { id: 0, lang: "Spanish", level0: "native" },
     { id: 1, lang: "English", level1: "intermediate" },
   ]);
-  const [description, setDescription] = useState("");
+  const [description, setDescription] = useState(`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ducimus, consectetur alias, accusamus iusto repellat adipisci fugit placeat dignissimos corporis neque impedit explicabo nobis ipsum quam eaque consequatur itaque maxime.
+Inventore ex ipsa saepe cumque sit veniam debitis nobis nulla dignissimos doloribus similique dolores impedit dolorum aliquam dicta sint commodi eos consectetur praesentium molestiae, quis error. Veniam cupiditate modi nemo!
+Sunt iure labore quam qui doloremque dolorem? Provident aliquam corrupti amet ullam! Eaque amet perspiciatis numquam. Harum provident autem blanditiis sequi maxime, non adipisci nisi veniam iusto hic culpa corrupti.`);
   const [reference, setReference] = useState([
     {
       id: 0,
       referer: "Enerst Badu",
       position: "senior Lecturer",
-      contact: "0549989323",
-      email: "Alvesbirifa@gmail.com",
+      contact: "024356768",
+      email: "edoe@gmail.com",
     },
     {
       id: 1,
       referer: "Edward Badu",
       position: "senior Lecturer",
-      contact: "0544531557",
-      email: "ebadu@gmail.com",
+      contact: "067346273738378",
+      email: "johnflinch@gmail.com",
     },
   ]);
   const [skills, setSkills] = useState([
@@ -47,21 +49,32 @@ function App() {
       title: "Project manager",
       start: new Date().getFullYear().toString(),
       end: new Date().getFullYear().toString(),
-      company: "Donyma steel complex",
+      company: "Phoenix steel complex",
       description:
-        `loknonodennawieninrwien
-oiwerinonrosonirneiongrennan
-dninvgninpgnpregnrpntginnvnnwrinirning`
+        `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ducimus, consectetur alias, accusamus iusto repellat adipisci fugit placeat dignissimos corporis neque impedit explicabo nobis ipsum quam eaque consequatur itaque maxime.
+Inventore ex ipsa saepe cumque sit veniam debitis nobis nulla dignissimos doloribus similique dolores impedit dolorum aliquam dicta sint commodi eos consectetur praesentium molestiae, quis error. Veniam cupiditate modi nemo!
+Sunt iure labore quam qui doloremque dolorem? Provident aliquam corrupti amet ullam! Eaque amet perspiciatis numquam. Harum provident autem blanditiis sequi maxime, non adipisci nisi veniam iusto hic culpa corrupti.`
     },
     {
       id: 1,
       title: "Contract Administrator",
       start: new Date().getFullYear().toString(),
       end: new Date().getFullYear().toString(),
-      company: "Consar construction limited",
+      company: "Luci construction limited",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Natus ducimus vitae, odio sequi officia officiis minus sapiente quis, eius praesentium unde? Quibusdam optio maxime impedit provident, enim nulla quae numquam.",
-    },
+`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ducimus, consectetur alias, accusamus iusto repellat adipisci fugit placeat dignissimos corporis neque impedit explicabo nobis ipsum quam eaque consequatur itaque maxime.
+Inventore ex ipsa saepe cumque sit veniam debitis nobis nulla dignissimos doloribus similique dolores impedit dolorum aliquam dicta sint commodi eos consectetur praesentium molestiae, quis error. Veniam cupiditate modi nemo!
+Sunt iure labore quam qui doloremque dolorem? Provident aliquam corrupti amet ullam! Eaque amet perspiciatis numquam. Harum provident autem blanditiis sequi maxime, non adipisci nisi veniam iusto hic culpa corrupti.`    },
+    {
+      id: 2,
+      title: "Quality Assurance",
+      start: new Date().getFullYear().toString(),
+      end: new Date().getFullYear().toString(),
+      company: "Physic construction limited",
+      description:
+`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ducimus, consectetur alias, accusamus iusto repellat adipisci fugit placeat dignissimos corporis neque impedit explicabo nobis ipsum quam eaque consequatur itaque maxime.
+Inventore ex ipsa saepe cumque sit veniam debitis nobis nulla dignissimos doloribus similique dolores impedit dolorum aliquam dicta sint commodi eos consectetur praesentium molestiae, quis error. Veniam cupiditate modi nemo!
+Sunt iure labore quam qui doloremque dolorem? Provident aliquam corrupti amet ullam! Eaque amet perspiciatis numquam. Harum provident autem blanditiis sequi maxime, non adipisci nisi veniam iusto hic culpa corrupti.`    },
   ]);
   const [nextschoolId, setNextSchoolId] = useState(2);
   const [nextExperienceId, setNextExperienceId] = useState(2);
@@ -69,10 +82,10 @@ dninvgninpgnpregnrpntginnvnnwrinirning`
   const [nextLanguageId, setNextLanguageId] = useState(2);
   const [nextReferenceId, setNextReferenceId] = useState(2);
   const [school, setSchool] = useState([
-    { id: 0, school: "Knust", degree: "PhD.", program: "QSCE" },
+    { id: 0, school: "Harvard university", degree: "PhD.", program: "Biomedical Engineering" },
     {
       id: 1,
-      school: "Adventist",
+      school: "Adventist Senior High School",
       degree: "Bsc",
       program: "Quantity Surveying and Construction Economics",
     },

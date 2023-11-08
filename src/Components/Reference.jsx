@@ -1,4 +1,5 @@
 import PropTypes  from "prop-types";
+import "./Styles/reference.css";
 
 function Reference({ referer, position, email, contact }) {
   return (
